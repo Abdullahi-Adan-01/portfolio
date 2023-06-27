@@ -1,0 +1,125 @@
+/* fonts import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+/*font-family: 'Aldrich', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+/* font-family: 'Alegreya Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
+/* font-family: 'Bahiana', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
+
+/* font-family: 'Athiti', sans-serif; */
+/* project colors scheme */
+:root {
+    --text-color: #2B2D42;
+    --button-color: #2A9D8F;
+    --highlight-color: #E76F51;
+    --extra-color: #F4A261;
+
+}
+
+/* global styling */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+    /*scroll-padding-top: 2rem;*/
+    font-size: 17px;
+}
+
+/* header section including the media queries */
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.047);
+    z-index: 999;
+
+
+}
+
+nav {
+    /* background-color: #212529; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+
+
+
+}
+
+li {
+    font-family: 'Alegreya Sans', sans-serif;
+    list-style: none;
+
+}
+
+.links {
+    display: flex;
+    gap: 5rem;
+
+}
+
+li a {
+    text-decoration: none;
+    color: var(--text-color);
+    /* color: white; */
+    font-size: 17px;
+
+
+}
+
+button {
+    border: none;
+    margin-right: 2rem;
+    background-color: var(--button-color);
+    padding: 8px 22px;
+    border-radius: 20px;
+    transition: all ease .3s;
+    font-family: 'Alegreya Sans', sans-serif;
+    cursor: pointer;
+}
+
+
+
+button a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+
+
+}
+
+button:hover {
+    /* color: #fff;
+    background-color: #1A1A1A; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-1px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+nav .logo {
+    margin-left: 30px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.logo span {
+    color: var(--highlight-color);
+}

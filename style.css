@@ -15,7 +15,7 @@
 :root {
     --text-color: #2B2D42;
     --button-color: #2A9D8F;
-    --highlight-color: #E76F51;
+    --highlight-color: #f05d38;
     --extra-color: #F4A261;
 
 }
@@ -118,8 +118,27 @@ button:active {
 nav .logo {
     margin-left: 30px;
     font-family: 'Aldrich', sans-serif;
+
 }
 
 .logo span {
     color: var(--highlight-color);
+}
+
+
+/* Responsive deign */
+@media only screen and (max-width:680px) {
+
+
+    .links,
+    nav button {
+        display: none;
+    }
+
+
+    nav .logo {
+        font-size: 14px;
+    }
+
+
 }

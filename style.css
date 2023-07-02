@@ -262,18 +262,123 @@ header .logo span {
     display: none;
 }
 
+.content-two {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.content-two .text-area {
+    width: 500px;
+    margin-top: 8rem;
+
+}
+
+.content-two .text-area>* {
+    margin: .4rem 3rem;
+}
+
+.content-two .text-area h3 {
+    font-size: 1rem;
+    font-family: 'Bahiana', cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--text-color);
+}
+
+.content-two .text-area h2 {
+    width: 400px;
+    font-size: 3rem;
+    font-family: 'Bahiana', cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--text-color);
+
+}
+
+.content-two .text-area h2 span {
+    color: var(--highlight-color);
+}
+
+.content-two .text-area p {
+    font-family: 'Athiti', sans-serif;
+    max-width: 320px;
+
+}
+
+.content-two .text-area button {
+    user-select: none;
+    -webkit-user-select: none;
+    margin-top: 2rem;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 4rem;
+    padding: 8px 20px;
+    width: 160px;
+    text-align: center;
+    transition: ease-out all .2s;
+}
+
+.content-two .text-area button:hover {
+    /* color: #fff;
+    background-color: #1A1A1A; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.content-two .text-area button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.content-two img {
+    width: 500px;
+    height: auto;
+    position: relative;
+    top: 1rem;
+    right: 4rem;
+}
 
 
 
 
+/* Tablets portrait Responsive deign  */
 
+@media only screen and (min-width:426px) and (max-width:912px) {
+    .text-area {
+        margin-left: 3rem;
+    }
 
+    .content-two .text-area>* {
+        margin: .4rem 8rem;
+    }
 
+    .content-two .text-area p {
+        font-size: .7rem;
 
+    }
 
+    .content-two .text-area h2 {
+        font-size: 2.5rem;
+    }
 
+    .content-two .text-area h3 {
+        font-size: .8rem;
+    }
 
+    .content-two img {
+        width: 450px;
+    }
 
+}
 
 
 

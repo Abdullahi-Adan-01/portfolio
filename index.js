@@ -12,3 +12,12 @@ closeMenu.addEventListener('click', () => {
 
 
 })
+// Scroll to section and hide navbar when a link is clicked
+document.addEventListener('click', (event) => {
+    if (event.target.matches('.nav__link')) {
+        event.preventDefault();
+        const targetId = event.target.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+        navMenu.classList.remove('show');
+    }
+});

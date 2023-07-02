@@ -175,6 +175,7 @@ header .logo span {
 
 }
 
+/* phones */
 @media only screen and (max-width:425px) {
     .header__toggle {
         display: inline;
@@ -224,4 +225,11 @@ header .logo span {
         right: 0;
     }
 
+    .nav__link {
+        font-size: .7rem;
+    }
+
+    .nav__list .btn {
+        font-size: .7rem;
+    }
 }

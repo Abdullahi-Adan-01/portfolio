@@ -258,80 +258,106 @@ header .logo span {
 /* end of navbar */
 /* end of navbar */
 /* end of navbar */
-
-
 .content-one {
-    overflow-x: hidden !important;
-
-
-
+    display: none;
 }
 
-.content-one h2 {
-    font-size: 2.3rem;
-    font-family: 'Bahiana', cursive;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 1rem;
 
 
-}
 
-.content-one h2 span {
-    color: var(--highlight-color);
-}
 
-.content-one img {
-    width: 300px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-}
 
-.content-one p {
-    font-family: 'Athiti', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: .8rem;
-    max-width: 250px;
-    /* Adjust the max-width value as per your preference */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-bottom: 1rem;
-    line-height: 1.9;
-}
 
-.content-one button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    user-select: none;
 
-    margin-bottom: 1rem;
-    background-color: var(--button-color);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 8px 17px;
-    width: 160px;
-    text-align: center;
-    transition: ease-out all .2s;
-}
 
-.content-one button:hover {
-    /* color: #fff;
+
+
+
+
+
+
+
+
+/* phones home page responsive */
+@media only screen and (max-width:425px) {
+    .content-two {
+        display: none;
+    }
+
+    .content-one {
+        overflow-x: hidden !important;
+        display: block;
+
+
+
+    }
+
+    .content-one h2 {
+        font-size: 2.3rem;
+        font-family: 'Bahiana', cursive;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 1rem;
+
+
+    }
+
+    .content-one h2 span {
+        color: var(--highlight-color);
+    }
+
+    .content-one img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    .content-one p {
+        font-family: 'Athiti', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: .8rem;
+        max-width: 250px;
+        /* Adjust the max-width value as per your preference */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.9;
+    }
+
+    .content-one button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        user-select: none;
+
+        margin-bottom: 1rem;
+        background-color: var(--button-color);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 8px 17px;
+        width: 160px;
+        text-align: center;
+        transition: ease-out all .2s;
+    }
+
+    .content-one button:hover {
+        /* color: #fff;
     background-color: #1A1A1A; */
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-}
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
 
-.content-one button:active {
-    box-shadow: none;
-    transform: translateY(0);
+    .content-one button:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
 }

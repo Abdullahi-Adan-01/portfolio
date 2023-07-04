@@ -478,8 +478,8 @@ header .logo span {
 
 /* laptops screens */
 .fab:hover {
-    /* transform: scale(1.5); */
-    transform: rotate(30deg);
+    transform: scale(1.5);
+    /* transform: rotate(30deg); */
 }
 
 @media only screen and (min-width:980px) and (max-width:1440px) {

@@ -33,7 +33,7 @@
 
 html {
     scroll-behavior: smooth;
-    /*scroll-padding-top: 2rem;*/
+    scroll-padding-top: 3rem;
     font-size: 17px;
     overflow-x: hidden;
 }
@@ -177,7 +177,7 @@ header .logo span {
 }
 
 /* phones */
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:650px) {
     .header__toggle {
         display: inline;
         font-size: 1.8 rem;
@@ -384,7 +384,7 @@ header .logo span {
 
 
 /* phones home page responsive */
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:650px) {
     .content-two {
         display: none;
     }
@@ -427,7 +427,7 @@ header .logo span {
         font-weight: 400;
         font-size: .8rem;
         max-width: 250px;
-        /* Adjust the max-width value as per your preference */
+
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -455,8 +455,6 @@ header .logo span {
     }
 
     .content-one button:hover {
-        /* color: #fff;
-    background-color: #1A1A1A; */
         box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
         transform: translateY(-2px);
     }
@@ -465,4 +463,284 @@ header .logo span {
         box-shadow: none;
         transform: translateY(0);
     }
+}
+
+
+/* end of home section */
+/* end of home section */
+/* end of home section */
+/* end of home section */
+/* end of home section */
+/* end of home section */
+/* end of home section */
+/* end of home section */
+
+
+/* laptops screens */
+.fab:hover {
+    /* transform: scale(1.5); */
+    transform: rotate(30deg);
+}
+
+@media only screen and (min-width:980px) and (max-width:1440px) {
+    .temporary-heading {
+        display: none;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .about img {
+        width: 500px;
+    }
+
+    .about .text-area {
+        width: 500px;
+        margin-top: 8rem;
+    }
+
+    .about .text-area>* {
+        margin: 1rem 3rem;
+    }
+
+    .about .text-area .permanent-heading {
+        font-size: 3rem;
+        font-family: 'Bahiana', cursive;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--text-color);
+    }
+
+    .about .text-area p {
+        font-family: 'Athiti', sans-serif;
+
+
+    }
+
+    .social {
+        position: relative;
+        left: 1rem;
+    }
+
+    .fab {
+        padding: 0px 6px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 50px;
+        /* font-weight: 600; */
+        position: relative;
+        right: 20px;
+        transition: all ease-out .3s 0s;
+
+    }
+
+    .fa-instagram {
+        color: #fb3958;
+        border-radius: 50%;
+
+    }
+
+    .fa-twitter-square {
+        color: #1DA1F2;
+        border-radius: 50%;
+
+    }
+
+    .fa-github-square {
+        color: #0d1b2a;
+        border-radius: 50%;
+
+    }
+
+}
+
+/* tablet screens */
+@media only screen and (min-width:651px) and (max-width:980px) {
+    .temporary-heading {
+        display: none;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about img {
+        width: 350px;
+    }
+
+    .about .text-area {
+        width: 500px;
+        margin-top: 8rem;
+    }
+
+    .about .text-area>* {
+        margin: 1rem 3rem;
+    }
+
+    .about .text-area .permanent-heading {
+        font-size: 2.3rem;
+        font-family: 'Bahiana', cursive;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--text-color);
+    }
+
+    .about .text-area p {
+        font-family: 'Athiti', sans-serif;
+        width: 280px;
+        font-size: .8rem;
+
+
+    }
+
+    .social {
+        position: relative;
+        left: 1rem;
+        bottom: 1.5rem;
+    }
+
+    .fab {
+        padding: 0px 6px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 50px;
+        /* font-weight: 600; */
+        position: relative;
+        right: 20px;
+        transition: all ease-out .3s 0s;
+
+    }
+
+    .fa-instagram {
+        color: #fb3958;
+        border-radius: 50%;
+
+    }
+
+    .fa-twitter-square {
+        color: #1DA1F2;
+        border-radius: 50%;
+
+    }
+
+    .fa-github-square {
+        color: #0d1b2a;
+        border-radius: 50%;
+
+    }
+
+
+}
+
+/* phones about page responsive */
+@media only screen and (min-width:250px) and (max-width:650px) {
+    .about {
+        overflow-x: hidden !important;
+    }
+
+    /* hiding the permaenet h2 title so that there's not two of them */
+    .about .text-area .permanent-heading {
+        display: none;
+    }
+
+    .about .temporary-heading {
+        display: block;
+        font-size: 2.3rem;
+        font-family: 'Bahiana', cursive;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 3rem;
+        color: var(--text-color);
+    }
+
+    .about img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+
+    .about .text-area {
+        overflow-x: hidden !important;
+        max-width: 650px;
+
+
+
+
+    }
+
+    .about .text-area p {
+        font-family: 'Athiti', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: .8rem;
+        color: var(--text-color);
+        line-height: 1.9;
+        text-align: center;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        position: relative;
+        left: 1rem;
+
+    }
+
+    .fab {
+        padding: 0 6px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 50px;
+        /* font-weight: 600; */
+        position: relative;
+        right: 20px;
+        transition: all ease-out .3s 0s;
+
+    }
+
+    .fa-instagram {
+        color: #fb3958;
+        border-radius: 50%;
+
+    }
+
+    .fa-twitter-square {
+        color: #1DA1F2;
+        border-radius: 50%;
+
+    }
+
+    .fa-github-square {
+        color: #0d1b2a;
+        border-radius: 50%;
+
+    }
+
 }

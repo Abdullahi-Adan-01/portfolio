@@ -1478,7 +1478,7 @@ textarea {
     color: #0d1b2a;
 }
 
-
+/* phones */
 @media only screen and (min-width:250px) and (max-width:650px) {
     .container {
         flex-direction: column;
@@ -1596,5 +1596,10 @@ textarea {
 
     .form label .input+span {
         font-size: 0.6em;
+    }
+
+    .email {
+        position: relative;
+        right: 1rem;
     }
 }

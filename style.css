@@ -1603,3 +1603,77 @@ textarea {
         right: 1rem;
     }
 }
+
+
+/* footer */
+
+
+footer {
+    margin-top: 4rem;
+    background: #f1f1f1;
+    padding: 90px 0;
+    height: 220px;
+
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    position: relative;
+
+}
+
+.follow {
+    position: relative;
+    bottom: 3rem;
+    font-size: 14px;
+
+
+}
+
+.footer-container p {
+    text-align: center;
+
+
+
+
+}
+
+.social-media {
+    /* margin: 30px 0; */
+    position: relative;
+    bottom: 3rem;
+    margin-left: 4rem;
+
+}
+
+.social-media a {
+    color: #001a21;
+
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.social-media i {
+    font-size: 25px;
+}
+
+footer .social-media .fa-twitter {
+    color: #1DA1F2;
+}
+
+
+.rights-text {
+    font-size: 13px;
+}
+
+
+
+.rights-text b {
+    text-decoration: underline;
+}

@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -21,7 +23,7 @@
             <li class="nav__item"><a href="#home" id="home-link" class="nav__link"> Home</a></li>
             <li class="nav__item"><a href="#about" class="nav__link"> About</a></li>
             <li class="nav__item"><a href="#projects" class="nav__link"> Projects</a></li>
-            <li class="nav__item"><a href="" class="nav__link btn"> Contacts</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link btn"> Contacts</a></li>
 
 
 
@@ -38,7 +40,7 @@
             <img src="man waving.svg" alt="man waving hello">
             <p>A passionate front-end developer based in Nairobi, Kenya with a remarkable two-year
                 journey in the world of coding.</p>
-            <button>contact me</button>
+            <button><a href="mailto:abdullahibarter@gmail.com">contact me</button></a>
         </div>
         <div class="content-two">
             <div class="text-area">
@@ -46,7 +48,7 @@
                 <h2>i'm <span>Abdullahi</span></h2>
                 <p>A passionate front-end developer based in Nairobi, Kenya with a remarkable two-year
                     journey in the world of coding.</p>
-                <button>contact me</button>
+                <button><a href="mailto:abdullahibarter@gmail.com">contact me</button></a>
             </div>
             <div class="main-image">
                 <img src="man waving.svg" alt="">
@@ -124,7 +126,65 @@
         </div>
 
     </section>
+    <section class="contact" id="contact">
+        <h2>contact me</h2>
+        <div class="container">
 
+            <div class="content">
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><a href="mailto:abdullahibarter@gmail.com"> abdullahibarter@gmail.com</p></a>
+                </div>
+                <div class="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><a href="tel:+254707069691"> 254707069691</p></a>
+                </div>
+                <button class="btn-cv"><a href="/CV.pdf" download="CV.pdf" target="_blank" rel="noopener noreferrer">
+                        Download cv
+                </button></a>
+            </div>
+            <div class="form-container">
+                <form action="https://formspree.io/f/xyyqybqa" method="POST" class="form" id="">
+
+                    <div class="flex">
+                        <label>
+                            <input name="firstname" required="" placeholder="" type="text" class="input" id="firstname">
+                            <span>first name</span>
+                        </label>
+
+                        <label>
+                            <input name="lastname" required="" placeholder="" type="text" class="input" id="lastname">
+                            <span>last name</span>
+                        </label>
+                    </div>
+
+                    <label>
+                        <input name="email" required="" placeholder="" type="email" class="input" id="email">
+                        <span>email</span>
+                    </label>
+
+                    <label>
+                        <input name="number" required="" type="tel" pattern="(\+)?[0-9]{1,15}" placeholder=""
+                            class="input" id="number">
+                        <span>contact number</span>
+                    </label>
+                    <label>
+                        <textarea name="message" required="" rows="3" placeholder="" class="input01"
+                            id="message"></textarea>
+                        <span>message</span>
+                    </label>
+
+                    <button type="submit" class="fancy" href="#">
+                        <span class="top-key"></span>
+                        <span class="text">submit</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
 
 
 
@@ -141,6 +201,8 @@
     <!-- scripts -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- for sending emails -->
+
     <script src="index.js"></script>
 </body>
 
